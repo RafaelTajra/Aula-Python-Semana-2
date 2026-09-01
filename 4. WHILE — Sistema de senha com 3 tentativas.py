@@ -1,0 +1,18 @@
+senha_correta = "1234"
+
+tentativas = 0
+
+while tentativas < 3:
+
+    senha = input("Digite sua senha: ")
+
+    if senha == senha_correta:
+        print("Senha correta!")
+        break
+
+    else:
+        print("Senha incorreta")
+        tentativas = tentativas + 1
+
+if tentativas == 3:
+    print("Usuário bloqueado")
